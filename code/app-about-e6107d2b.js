@@ -1,28 +1,15 @@
-import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js';
-
-// You can also import styles from another file
-// if you prefer to keep your CSS seperate from your component
-import { styles } from './about-styles';
-
-import { styles as sharedStyles } from '../../styles/shared-styles'
-
-import '@shoelace-style/shoelace/dist/components/card/card.js';
-
-@customElement('app-about')
-export class AppAbout extends LitElement {
-  static styles = [
-    sharedStyles,
-    styles
-  ]
-
-  constructor() {
-    super();
+import{i as c,s as h,x as i,a as u,e as d}from"./index-83b4f8d6.js";const m=c`
+  @media(min-width: 1000px) {
+    sl-card {
+      max-width: 70vw;
+    }
   }
 
-  render() {
-    return html`
-      <app-header ?enableBack="${true}"></app-header>
+  main {
+    margin-left: 25px;
+  }
+`;var l=Object.defineProperty,f=Object.getOwnPropertyDescriptor,b=(n,a,r,s)=>{for(var e=s>1?void 0:s?f(a,r):a,t=n.length-1,o;t>=0;t--)(o=n[t])&&(e=(s?o(a,r,e):o(e))||e);return s&&e&&l(a,r,e),e};let p=class extends h{constructor(){super()}render(){return i`
+      <app-header ?enableBack="${!0}"></app-header>
 
       <main>
         <h2>About Page</h2>
@@ -40,6 +27,5 @@ export class AppAbout extends LitElement {
               docs</a> to learn more about the advanced features that you can use in your PWA</p>
         </sl-card>
   </main>
-    `;
-  }
-}
+    `}};p.styles=[u,m];p=b([d("app-about")],p);export{p as AppAbout};
+//# sourceMappingURL=app-about-e6107d2b.js.map
